@@ -1,4 +1,3 @@
-
 --local inspect = require('inspect')
 function Initialize()
   nbIcons = tonumber(SKIN:GetVariable('NbIcons'))
@@ -16,21 +15,15 @@ function Initialize()
   end
 	
 end
-
 function DeleteIcon(value, inputFile)
 
     local file = io.open(inputFile, 'r')
     local fileContent = {}
-    local skipNextLine=false
     for line in file:lines() do
-        if not line:match('^appAction'..value..'=(.+)') and not line:match('^appImg'..value..'=(.+)') then
+        if not line:match('^appImg'..value..'=(.+)') and not line:match('^appAction'..value..'=(.+)') then
           if not skipNextLine then 
             table.insert (fileContent, line)
-          else
-            skipNextLine =false;
           end
-        else
-            skipNextLine = true
         end
         
         
@@ -60,4 +53,4 @@ function DeleteIcon(value, inputFile)
 end
 
 
---DeleteIcon(3,[[D:\User\Documents\Rainmeter\Skins\Embla\@Resources\Dock\DockSettings.ini]])
+--DeleteIcon(5,[[D:\User\Documents\Rainmeter\Skins\Embla\@Resources\Dock\DockSettings.ini]])
