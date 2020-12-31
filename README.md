@@ -28,7 +28,7 @@ The dock is hidden,
 
 ### General options
 
-You can acces to general options by right clicking on the dock, and click on `Dock Settings`
+You can acces to general options by right clicking on the dock, and click on `Dock Settings`  
 ![](ZRD.MD/dock/dockOptions.png)  
 
 You have acces to differents options:
@@ -183,7 +183,7 @@ The Ram and Cpu feature will allow you to see the charge of each of them.
 For the **CPU**, you can hide the `top`, or resize it   
 ![](ZRD.MD/CpuRam/CpuOptions.png)
 
-For the **RAM**, you can only Activate/Deactivate
+For the **RAM**, you can only Activate/Deactivate  
 ![](ZRD.MD/CpuRam/RamOptions.png)
 
 
