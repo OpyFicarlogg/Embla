@@ -28,8 +28,8 @@ function AddParam(number, action, img, inputFile)
 
   
   
-  appAction=("\rappAction%d=\"%s\"\n"):format(number,action)
-  appImg = ("appImg%d=%s\n"):format(number,img)
+  appAction=("appAction%d=\"%s\"\n"):format(number,action)
+  appImg = ("appImg%d=%s\r"):format(number,img)
   
   param= appAction..appImg
   AppendFile(inputFile,param)
